@@ -1,29 +1,26 @@
 package com.framework.testscripts;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.event.annotation.AfterTestMethod;
-import org.springframework.test.context.event.annotation.BeforeTestMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.framework.pageobjects.HomePage;
 
-public class HomePageTests {
-	@Autowired
-	HomePage homePage;
+public class HomePageTests extends SpringTestNgFrameworkApplicationTests {
+	HomePage homePage=new HomePage();
 	
-@BeforeTestMethod
-public void startBrowser() {
-	homePage.navigate();
-}
+	@BeforeTest
+	public void startBrowser() {
+		homePage.navigate();
+	}
 
-@Test
-public void testfuncdtion() {
-	
-}
-	
-@AfterTestMethod
-public void quitBrowser() {
-	HomePage.quitBrowser();
-}
+	@Test
+	public void testfuncdtion() {
+		System.out.println("test function");
+	}
+
+	@AfterTest
+	public void quitBrowser() {
+		homePage.quitBrowser();
+	}
 
 }

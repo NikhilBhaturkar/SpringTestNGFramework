@@ -8,7 +8,7 @@ public class HomePage extends DriverInitializer{
 		getDriver().navigate().to("http://www.google.com");
 	}
 	
-	public static void quitBrowser() {
-		quitBrowser();
+	public void quitBrowser() {
+		getDriver().quit();
 	}
 }

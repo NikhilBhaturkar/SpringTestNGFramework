@@ -2,15 +2,57 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62" started-at="2019-12-11T17:28:44Z" finished-at="2019-12-11T17:28:44Z">
+  <suite name="Default suite" duration-ms="53428" started-at="2019-12-12T11:20:45Z" finished-at="2019-12-12T11:21:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62" started-at="2019-12-11T17:28:44Z" finished-at="2019-12-11T17:28:44Z">
+    <test name="Default test" duration-ms="53428" started-at="2019-12-12T11:20:45Z" finished-at="2019-12-12T11:21:39Z">
       <class name="com.framework.testscripts.HomePageTests">
-        <test-method status="PASS" signature="testfuncdtion()[pri:0, instance:com.framework.testscripts.HomePageTests@4667ae56]" name="testfuncdtion" duration-ms="15" started-at="2019-12-11T22:58:44Z" finished-at="2019-12-11T22:58:44Z">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.framework.testscripts.HomePageTests@3c0be339]" name="startBrowser" is-config="true" duration-ms="41403" started-at="2019-12-12T16:50:45Z" finished-at="2019-12-12T16:51:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.framework.testscripts.HomePageTests@3c0be339]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="228" started-at="2019-12-12T16:51:27Z" finished-at="2019-12-12T16:51:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.framework.testscripts.HomePageTests@3c0be339]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="10405" started-at="2019-12-12T16:51:27Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2019-12-12T16:51:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.framework.testscripts.HomePageTests@3c0be339]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="31" started-at="2019-12-12T16:51:37Z" finished-at="2019-12-12T16:51:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.framework.testscripts.HomePageTests.testfuncdtion()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="testfuncdtion()[pri:0, instance:com.framework.testscripts.HomePageTests@3c0be339]" name="testfuncdtion" duration-ms="62" started-at="2019-12-12T16:51:37Z" finished-at="2019-12-12T16:51:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testfuncdtion -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.framework.testscripts.HomePageTests@3c0be339]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="16" started-at="2019-12-12T16:51:38Z" finished-at="2019-12-12T16:51:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.framework.testscripts.HomePageTests.testfuncdtion()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.framework.testscripts.HomePageTests@3c0be339]" name="springTestContextAfterTestClass" is-config="true" duration-ms="15" started-at="2019-12-12T16:51:38Z" finished-at="2019-12-12T16:51:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.framework.testscripts.HomePageTests@3c0be339]" name="quitBrowser" is-config="true" duration-ms="1172" started-at="2019-12-12T16:51:38Z" finished-at="2019-12-12T16:51:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
       </class> <!-- com.framework.testscripts.HomePageTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

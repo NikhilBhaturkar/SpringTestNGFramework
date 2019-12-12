@@ -11,7 +11,7 @@ public class DriverInitializer {
 		return DriverManager.getDriver().driver;
 	}
 
-	public static void quitBrowser() {
+	public void quitBrowser() {
 		DriverManager.getDriver().driver.quit();
 		DriverManager.setDriver(null);
 	}
